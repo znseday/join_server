@@ -6,6 +6,8 @@ if(WIN32 OR WIN64)
 	set(BOOST_ROOT "C:/Boost")
 else()
 	project(join_server VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+	include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+	conan_basic_setup()
 endif()
 
 find_package(Threads REQUIRED)
