@@ -18,7 +18,7 @@ ostream& operator<<(ostream& s, const TwoFields &ob)
 ostream& operator<<(ostream& s, const ResponseTable& ob)
 {
 	for (const auto &v : ob)
-		cout << v.first << "," << v.second.FieldA << "," << v.second.FieldB << endl;
+		s << v.first << "," << v.second.FieldA << "," << v.second.FieldB << endl;
 
 	return s;
 }

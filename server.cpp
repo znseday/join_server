@@ -54,7 +54,7 @@ void RequestHandler::do_read()
 								if ( HandleInsertCommand(cmd, DB, nd) )
 									Resps.emplace_back("OK\n");
 								else
-									Resps.emplace_back("Err duplicate " + to_string(nd) + "\n");
+									Resps.emplace_back("Err insertation with id " + to_string(nd) + "\n");
 								break;
 
 							case CommandEnum::TRUNCATE:
