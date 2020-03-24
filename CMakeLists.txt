@@ -39,17 +39,6 @@ else()
 		set(CMAKE_BUILD_TYPE Release)
 endif()
 
-#set_target_properties(my_tests PROPERTIES
-#    COMPILE_DEFINITIONS BOOST_TEST_DYN_LINK
-#    INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
-#)
-
-
-#target_link_libraries(my_tests
-#    ${Boost_LIBRARIES}
-#)
-
-
 if(WIN32 OR WIN64)
 
 	set_target_properties(join_server PROPERTIES
