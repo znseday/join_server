@@ -69,9 +69,6 @@ else()
 endif()
 
 
-
-
-
 install(TARGETS join_server RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
